@@ -1,0 +1,42 @@
+#title {
+    text-align: center;
+  }
+  #form {
+    background: #eee;
+    margin: 50px auto;
+    padding:30px;
+    width: 50%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-bottom:20px;
+  }
+  .label {
+    margin-right: 10px;
+  }
+  input[type=text], input[type=email], input[type=number]{
+    flex: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .push-right {
+      margin-left: 20vh;
+  }
+  .column {
+     display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  #submit {
+    margin: 10px;
+    padding: 15px;
+    width: 10%;
+    border-radius: 60px;
+    background: #ff78c3
+  }
+  
