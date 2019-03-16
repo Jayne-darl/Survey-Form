@@ -1,82 +1,116 @@
 <!Doctype html>
 
 <html>
-  <head>
-    <meta charset UTF-8>
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1 id="title">Survey Form</h1>
-    <div id="form">
-    
+
+<head>
+  <meta charset UTF-8>
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="survey">
+  <h1 id="title">Survey Form</h1>
+  <div id="form">
+
     <p id="description">Tell us how we can serve you better</p>
     <form id="survey-form">
       <div class="row push-right">
-      <div class="label">
-      <label id="name-label">Name:</label>
+        <div class="label">
+          <label id="name-label">Name:</label>
+        </div>
+        <div class="right-align">
+          <input id="name" type="text" placeholder="Enter Name" class="input" required>
+        </div>
       </div>
-      <div>
-      <input id="name" type="text" placeholder="Enter Name" required>
-        </div>
-        </div>
       <div class="row push-right">
-      <div class="label">
-      <label id="email-label">Email:</label>
-          </div>
-        <div>
-       <input id="email" type="email" placeholder="example@gmail.com" required>
+        <div class="label">
+          <label id="email-label">Email:</label>
+        </div>
+        <div class="right-align">
+          <input id="email" type="email" placeholder="example@gmail.com" class="input" required>
         </div>
       </div>
-        <div class="row push-right">
-      <div class="label">
-      <label id="number-label">Age:</label>
-            </div>
+      <div class="row push-right">
+        <div class="label">
+          <label id="number-label">Age:</label>
+        </div>
+        <div class="right-align">
+          <input id="number" type="number" placeholder="Age" min="18" max="100" class="input" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label id="number-label">Gender:</label>
+        </div>
+        <div class="right-align">
+          <select name="gender" id="dropdown" class="dropdown">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label>Which region do you reside in</label>
+        </div>
+        <div class="right-align">
           <div>
-      <input id="number" type="number" placeholder="Age" min="18" max="100" required>
-          </div>
-        </div>
-          <div class="row push-right">
-      <div class="label">
-       <label id="number-label">Gender:
-            </div>
-            <div>
-      <select name="gender" id="dropdown">
-        <option value="Female">Female</option>
-        <option value="Male">Male</option>
-              </select></label></div></div>
-          <div class="row">
-      <div class="label">
-      <label>Which region do you reside in?
-        </div>
-            <div class="column">
-              <div><input name="region" type="radio" value="south" checked>South</div>
-              <div><input name="region" type="radio" value="north">North</div>
-              <div> <input name="region" type="radio" value="west">West</div>
-              <div><input name="region" type="radio" value="east">East</div></div></div>
-                 <div class="row">
-      <div class="label">
-      <label>Skills you will love to acquire
-        </div>
-            <div class="column">
-              <div><input type="checkbox" name="interest1" value="it">Software Development</div>
-              <div><input type="checkbox" name="interest2" value="data">Data Science</div>
-              <div><input type="checkbox" name="interest3" value="agric">Agriculture</div>
-              <div><input type="checkbox" name="interest4" value="fashion">Fashion Design</div>
-              <div> <input type="checkbox" name="interest5" value="design">UI/UX Designer</div>
-              <div> <input type="checkbox" name="interest6" value="digital">Digital Marketing</div>
-              <div><input type="checkbox" name="interest7" value="other">Others</label></div></div></div>
-        <div class="row">
-          <div class="label"><label>Why are you interested in the option you chose</label>
+            <input name="region" type="radio" value="south" checked>South
           </div>
           <div>
-      <textarea name="comment" form="survey-form" col="400" row="200">Describe the reason for your interest here. </textarea>
-          </div></div>
+            <input name="region" type="radio" value="north">North
+          </div>
+          <div>
+            <input name="region" type="radio" value="west">West
+          </div>
+          <div>
+            <input name="region" type="radio" value="east">East
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label>Skills you will love to acquire</label>
+        </div>
+        <div class="right-align">
+          <div>
+            <input type="checkbox" name="interest1" value="it">Software Development
+          </div>
+          <div>
+            <input type="checkbox" name="interest2" value="data">Data Science
+          </div>
+          <div>
+            <input type="checkbox" name="interest3" value="agric">Agriculture
+          </div>
+          <div>
+            <input type="checkbox" name="interest4" value="fashion">Fashion Design
+          </div>
+          <div>
+            <input type="checkbox" name="interest5" value="design">UI/UX Designer
+          </div>
+          <div>
+            <input type="checkbox" name="interest6" value="digital">Digital Marketing
+          </div>
+          <div>
+            <input type="checkbox" name="interest7" value="other">Others</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label>Why are you interested in the option you chose</label>
+        </div>
+        <div class="right-align">
+          <textarea name="comment" form="survey-form"  class="input">Describe the reason for your interest here. </textarea>
+        </div>
+      </div>
       <div>
         <button id="submit">Submit</button>
       </div>
-      
+
     </form>
-      </div>
-  </body>
+  </div>
+</body>
+
 </html>

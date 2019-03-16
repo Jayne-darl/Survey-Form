@@ -1,42 +1,87 @@
-#title {
-    text-align: center;
-  }
-  #form {
-    background: #eee;
-    margin: 50px auto;
-    padding:30px;
-    width: 50%;
-    height: auto;
-    border-radius: 4px;
-  }
-  .row {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    margin-bottom:20px;
-  }
-  .label {
-    margin-right: 10px;
-  }
-  input[type=text], input[type=email], input[type=number]{
-    flex: 1;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-  .push-right {
-      margin-left: 20vh;
-  }
-  .column {
-     display: flex;
-    flex: 1;
-    flex-direction: column;
-  }
-  #submit {
-    margin: 10px;
-    padding: 15px;
-    width: 10%;
-    border-radius: 60px;
-    background: #ff78c3
-  }
+body {
+  text-align: center;
+  background: #473bee;
+  min-width: 320px;
+}
+.survey {
+  display: flex;
+  flex: 1;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#form {
+  background: #eee;
+  min-width: 900px;
+  margin: 50px auto;
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  padding: 50px 0;
+  /* padding-top: 20px; */
+}
+
+.label {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.right-align{
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.input {
+  height: 30px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+input[type=radio], input[type=checkbox] {
+  margin: 20px 10px 0 10px;
   
+}
+textarea.input {
+  height: 100px;
+  resize: vertical;
+  }
+
+#submit {
+  width: 100px;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #0485ee;
+  font-size: 20px;
+  color: white;
+}
